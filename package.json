@@ -1,0 +1,18 @@
+{
+  "name": "game",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "esbuild public/travel-game.jsx --bundle --outfile=public/app.bundle.js --loader:.jsx=jsx --format=esm --minify",
+    "dev": "esbuild public/travel-game.jsx --bundle --outfile=public/app.bundle.js --loader:.jsx=jsx --format=esm --watch",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.18.20"
+  }
+}
